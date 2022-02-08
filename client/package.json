@@ -1,26 +1,24 @@
 {
-  "homepage": "http://dharmasarswat.github.io/homebucket",
+  "homepage": "http://SDB14.github.io/homebucket",
   "name": "client",
   "version": "0.1.0",
   "private": true,
+  "proxy": "http://localhost:3001/",
+
   "dependencies": {
     "@apollo/client": "^3.5.8",
+    "@stripe/stripe-js": "^1.3.1",
     "@testing-library/jest-dom": "^5.16.1",
     "@testing-library/react": "^12.1.2",
     "@testing-library/user-event": "^13.5.0",
-    "axios": "^0.25.0",
     "bootstrap": "^5.1.3",
-    "graphql": "^16.3.0",
-    "graphql-hooks": "^5.5.1",
-    "lodash": "^4.17.21",
+    "graphql": "^15.4.0",
+    "jwt-decode": "^2.2.0",
     "react": "^17.0.2",
     "react-bootstrap": "^2.1.2",
     "react-dom": "^17.0.2",
-    "react-drag-drop-files": "^2.3.1",
-    "react-image-dropzone": "^1.11.0",
     "react-router-dom": "^6.2.1",
-    "react-scripts": "5.0.0",
-    "web-vitals": "^2.1.4"
+    "react-scripts": "5.0.0"
   },
   "scripts": {
     "start": "react-scripts start",
