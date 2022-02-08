@@ -1,11 +1,11 @@
 const express = require("express");
 const dotenv = require("dotenv");
 const { graphqlHTTP } = require("express-graphql");
-const schema = require("./graphql/schema");
+const schema = require("./server/graphql/schema");
 const cors = require("cors");
 const multer = require("multer");
 
-const { connectDB } = require("./db");
+const { connectDB } = require("./server/db");
 
 const app = express();
 dotenv.config();
@@ -13,7 +13,7 @@ connectDB();
 
 app.use(express.static("uploads"))
 
-const { authenticate } = require("./middleware/auth");
+const { authenticate } = require("./server/middleware/auth");
 
 app.use(cors());
 app.use(authenticate);
